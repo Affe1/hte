@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+  
+  }
+
+
+@font-face {
+    font-family: 'tippingm'; /*a name to be used later*/
+    src: url("/adler.regular.ttf"); /*URL to font*/
+}
+html{
+ 
+    height: 100%;
+   
+  }
+
+body{
+    font-family: 'tippingm';
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display:flex; flex-direction:column; 
+}
+
+.sticky{
+
+    position:sticky;
+    top:0;
+    background-color: #fff;
+  }
+
+.grey{
+
+    color: #555;
+}
+#green{
+    color: #236F21;
+}
+.content{
+    text-align: center;
+    flex:1;
+    margin-bottom: 60px;
+
+}
+.inline{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.inline p{
+    margin-right: 50px;
+}
+.inline h2{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.content img{
+    width: 50%;
+    height: auto;
+    border-top: 5px inset #000;
+    border-bottom: 5px outset #236F21;
+    
+}
+.nav ul{
+  
+    list-style: none;
+    top: 5px;
+   right: 5px;
+    position: absolute;
+    margin-top: 5px;
+    
+   
+display: flex;
+}
+.nav li{
+    padding: 10px;
+
+}
+.nav a{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #236F21;
+    text-decoration: none;
+}
+
+.nav a:hover{
+   
+   
+    cursor: pointer;
+    color: #555;
+}
+
+#side-menu-toggle {
+    top: 10px;
+    right: 10px;
+     position: absolute;
+   
+    border: 1px solid #236F21;
+    font: inherit;
+   
+    display: block;
+    background: transparent;
+    color: #236F21;
+    cursor: pointer;
+   
+  }
+  #side-menu-toggle p{
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  
+  #side-menu-toggle:focus {
+    outline: none;
+  }
+  
+  #side-menu-toggle:active,
+  #side-menu-toggle:hover {
+    color: #555;
+    border-color: #555;
+  }
+
+.decorative-line {
+    background-image: linear-gradient(var(--line-color), var(--line-color));
+    background-repeat: no-repeat;
+    background-size: 100% var(--line-height);
+    background-position: 0 center;
+}
+.my-element {
+    background-image: linear-gradient(
+        to right,
+        black,
+        white 35%,
+        white 65%,
+       black
+    );
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    background-position: 0 center;
+}
+
+@media (min-width: 855px) {
+    
+  
+    #side-menu-toggle {
+      display: none;
+    }
+  
+    
+  
+  
+  }
+  @media (max-width: 856px) {
+    .nav{
+    display: none;
+    }
+    .content img{
+
+        width: 80%;
+        height: auto;
+
+    }
+    
+  }
+  footer{
+   
+    font-family:Arial, Helvetica, sans-serif;
+   
+    color: black;
+    text-align: center;
+    padding: 10px;
+  
+  
+  
+  }
+  footer a{
+    font-family:Arial, Helvetica, sans-serif;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    color:  black;
+    cursor: pointer;
+    padding: 0;
+  }
