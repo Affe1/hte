@@ -28,6 +28,9 @@ body{
     top:0;
     background-color: #fff;
   }
+#nm{
+  margin-right: 0;
+}
 
 .grey{
 
@@ -95,7 +98,7 @@ display: flex;
     right: 10px;
      position: absolute;
    
-    border: 1px solid #236F21;
+    border: 2px solid #236F21;
     font: inherit;
    
     display: block;
